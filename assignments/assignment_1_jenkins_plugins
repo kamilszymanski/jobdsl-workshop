@@ -1,0 +1,3 @@
+Install required Jenkins plugins by executing `scripts/install_plugins.groovy` in Jenkins Script Console
+
+TIP: plugins are being installed in background, so you might want to check Jenkins logs to monitor progress
