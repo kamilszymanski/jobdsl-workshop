@@ -1,0 +1,3 @@
+Create a list view that displays all seed jobs along with their status, last successful build, last failed build and build button
+
+TIP: all seed jobs should match the following regular expression: '.*-seed$'
