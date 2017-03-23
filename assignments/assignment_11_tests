@@ -1,0 +1,3 @@
+Write a test asserting that acceptance tests are run against the same code that Project Echo pipeline was triggered for
+
+TIP: it's not enough to test a single job in isolation, passing variables throughout the pipeline should also be verified
