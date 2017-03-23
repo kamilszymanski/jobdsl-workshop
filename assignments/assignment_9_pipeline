@@ -1,0 +1,23 @@
+Create delivery pipeline for https://github.com/dev-trainings/echo-gradle-project.git project with the following steps:
+1) build step:
+    pulls latest code from git repository
+    polls the repository for new commits at midnight (@midnight)
+    builds code and publishes it to artifact repository by executing gradle publish task
+    triggers second step passing in the VERSION parameter with the value of GIT_COMMIT
+2) deploy on test step
+    simulates project deployment on test environment by echoing version of the project on console
+    triggers third step passing in current parameters
+3) run acceptance tests
+    pulls code from git repository in the version specified by VERSION parameter
+    runs acceptance tests by executing gradle acceptanceTests task
+    triggers fourth step passing in current parameters
+4) deploy on production step
+    simulates project deployment on production environment by echoing version of the project on console
+Add a view for this pipeline (e.g. delivery pipeline view or build pipeline view)
+
+TIP: use Parametrized Trigger plugin
+TIP: Git plugin keeps commit SHA in GIT_COMMIT environmental variable
+TIP: do one thing at a time
+TIP: create pipeline view early on
+
+OPTIONAL: apply DRY principle by extracting common parts to helper methods
