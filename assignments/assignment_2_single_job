@@ -1,0 +1,1 @@
+Replace quietPeriod configured by direct XML modification (configure block) with native Job DSL support for quietPeriod.
