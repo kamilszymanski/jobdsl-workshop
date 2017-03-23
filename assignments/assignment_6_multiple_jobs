@@ -1,0 +1,6 @@
+Adapt DSL script crafted in previous assignments to create a job for each project from
+https://github.com/dev-trainings repository whose name ends with '-gradle-project'
+
+TIP: GitHub exposes an API that allows you to fetch repositories metadata https://api.github.com/users/dev-trainings/repos
+TIP: Groovy makes HTTP GET requests as easy as asking for text from an URL
+TIP: parsing JSON documents is super easy with JsonSlurper (check snippets/parsing_json_documents.groovy)
